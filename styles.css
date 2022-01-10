@@ -152,8 +152,8 @@ a {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  margin: 4.2rem auto 6.8rem auto;
-  gap: 2.2rem;
+  margin: 4.2rem auto 4.2rem auto;
+  gap: 2.4rem;
   width: 100%;
 }
 
@@ -168,23 +168,28 @@ a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .information__item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   min-width: 10rem;
-  height: 15rem;
-  width: 7.5rem;
+  height: 20rem;
+  width: 11.2rem;
   gap: 1rem;
+}
+
+.information__wrapper--2x2 {
+  display: flex;
+  gap: 3rem;
 }
 
 .information__card {
   height: 100%;
-  max-height: 160px;
+  max-height: 220px;
   width: 100%;
   border: 4px var(--btn-color) solid;
   border-radius: 16px;
@@ -205,6 +210,9 @@ a {
   max-width: 100px;
   width: 100%;
 }
+.information__card > h5 {
+  font-size: 1.2rem;
+}
 
 .information__text {
   color: #1f2937;
@@ -216,7 +224,7 @@ a {
 }
 
 .information__bulletpoints {
-  font-size: 0.96rem;
+  font-size: 1rem;
 }
 
 /* Testimonial */
@@ -312,6 +320,10 @@ a {
     padding: 0rem;
   }
 
+  .hero__left--title {
+    font-size: 2.2rem;
+  }
+
   .hero__right > img {
     width: 320px;
     max-width: 100%;
@@ -325,18 +337,25 @@ a {
   }
 }
 
+@media (max-width: 1003px) {
+  .hero {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column-reverse;
+    margin: 2rem auto;
+  }
+  .hero__left--button {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
   .vertical-container {
     margin: 0 auto;
     max-width: 95%;
   }
 
-  .hero {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-    margin: 2rem auto;
-  }
   .hero__left--title {
     font-size: 34px;
     text-align: center;
@@ -344,9 +363,6 @@ a {
   .hero__left--text {
     font-size: 12px;
     text-align: center;
-  }
-  .hero__left--button {
-    margin: 0 auto;
   }
 
   .information__title {
@@ -380,6 +396,11 @@ a {
     text-align: center;
     flex-direction: column;
     gap: 4px;
+    padding: 0 4rem;
+  }
+
+  .cta__button {
+    margin: 0.5rem 0;
   }
 }
 @media (max-width: 380px) {
@@ -403,5 +424,8 @@ a {
   }
   .navbar__links {
     display: none;
+  }
+  .information__wrapper--2x2 {
+    flex-direction: column;
   }
 }
