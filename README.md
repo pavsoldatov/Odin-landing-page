@@ -1,5 +1,8 @@
 # Odin-landing-page
 
+A landing page assingment for Thw Odin Project
+<br>
+
 Credits:
 <br>
 https://9elements.github.io/fancy-border-radius/ -- border radius
