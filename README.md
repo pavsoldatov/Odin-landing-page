@@ -1,6 +1,6 @@
 # Odin-landing-page
 
-A landing page assingment for Thw Odin Project
+A landing page assingment for The Odin Project
 <br>
 
 Credits:
